@@ -1,0 +1,118 @@
+/* override browser default */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contendor {
+    height: 100%;
+}
+
+.contendor-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 100px;*/
+    height: 100%;
+    width: 100%;
+}
+
+.logo-login{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-login{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logIn{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 70%;
+}
+
+.input-login{
+
+}
+
+.send-login{
+    margin-top: 3rem;
+}
+
+/* svg{
+    height: 20px;
+    width: 100%;
+} */
+
+.alertaError{
+    animation: desaparecer 2s;
+}
+
+@media (max-width: 800px) {
+    .contendor-login{
+        flex-direction: column;
+    }
+    form{
+        width: 90%;
+    }
+    .logIn, .logo-login{
+        width: 100%;
+    }
+
+    .logo-login{
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    img {
+        max-width: 70%;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    .titulo-login{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .send-login{
+        margin-top: 1rem;
+    }
+
+  }
+
+@keyframes desaparecer {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: .75;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .25;
+    }   
+    100%{
+        opacity: 0;
+    }
+}
